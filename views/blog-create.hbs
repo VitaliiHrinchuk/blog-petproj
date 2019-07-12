@@ -1,0 +1,17 @@
+<section id="creation">
+  {{#if isError}}
+  <span class="error-msg">{{errorMsg}}</span>
+  {{/if}}
+  <form action="./create" method="POST" class="create-form">
+    <label for="title" class="">Title</label>
+    <input type="text" name="title" id="title" class="d-block">
+    <label for="subtitle">Subtitle</label>
+    <input type="text" name="subtitle" id="subtitle">
+    <textarea name="text" id="text" cols="30" rows="10"></textarea>
+    <label for="image">Image</label>
+    <input type="file" name="image" accept="image/jpeg,image/png">
+    <label for="tag">Tag</label>
+    <input type="text" name="tag">
+    <input type="submit" value="Send">
+  </form>
+</section>
